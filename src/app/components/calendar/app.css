@@ -1,0 +1,45 @@
+App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.rbc-timeslot-group{
+  min-height:30px;
+}
+.rbc-day-slot .rbc-event-content{
+  font-size: 90%;
+}
+.rbc-event-label{
+  font-size:60%;
+}
+/*.rbc-month-row{*/
+  /*overflow:visible;*/
+  /*height:1000px;*/
+/*}*/
+/*.rbc-month-view{*/
+  /*overflow:visible;*/
+  /*height:1000px;*/
+/*}*/

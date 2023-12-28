@@ -1,0 +1,13 @@
+.loginLayout{
+  min-height:100vh !important;
+}
+.login-form-button{
+  width:100%;
+}
+.socialLoginButton{
+  background:transparent;
+
+}
+.submit-form-button{
+  width:50%;
+}

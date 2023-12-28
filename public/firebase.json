@@ -1,0 +1,12 @@
+{
+    "config": {
+        "apiKey": "AIzaSyAzvQUvsZDf-P0sUZYq33CaYk6Xvq6755A",
+        "authDomain": "fcm-push-testing.firebaseapp.com",
+        "databaseURL": "https://fcm-push-testing.firebaseio.com",
+        "projectId": "fcm-push-testing",
+        "storageBucket": "fcm-push-testing.appspot.com",
+        "messagingSenderId": "957628491546",
+        "appId": "1:957628491546:web:36c3ce28b7040e5d5a6ea3",
+        "measurementId": "G-CH9VG4G19H"
+    }
+}

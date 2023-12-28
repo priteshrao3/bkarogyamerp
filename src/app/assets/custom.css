@@ -1,0 +1,93 @@
+.shortcutLetterHighlight {
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.patientIdHighlight {
+    font-weight: bolder;
+}
+
+.ant-checkbox-wrapper, .ant-checkbox-wrapper + .ant-checkbox-wrapper {
+    display: block;
+    margin-left: 0px;
+}
+
+.mar-b-10 {
+    margin-bottom: 10px;
+}
+
+.ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+    padding: 6px 10px !important;
+    word-break: inherit !important;
+}
+
+.ant-table-tbody .ant-form-item {
+    margin-bottom: initial !important;
+}
+
+.ant-table {
+    overflow-x: scroll !important;
+}
+
+.ant-radio-button-wrapper {
+    height: 100% !important;
+}
+
+.ant-checkbox-wrapper {
+    margin-left: 8px !important;
+}
+
+.ant-tabs-nav .ant-tabs-tab {
+    margin: 0 5px 0 0 !important;
+}
+
+.ant-tabs-bar.ant-tabs-card-bar {
+    margin: 0 0 0 0 !important;
+}
+
+.ant-form-item {
+    margin-bottom: 12px !important;
+}
+
+.ant-form-item-control {
+    line-height: 30px ;
+}
+
+
+.logo {
+    height: 32px;
+    background: rgba(255, 255, 255, .2);
+    margin: 16px;
+}
+
+.ant-menu-item {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+/*.home-sider .ant-layout-sider-children .ant-menu-item,.home-sider .ant-layout-sider-children .ant-menu-submenu-title{*/
+/*    height:50px;*/
+/*    padding:0px !important;*/
+/*    text-align: center;*/
+/*    border-bottom: 1px solid rgba(255, 255, 255, 0.65);*/
+/*}*/
+/*.home-sider .ant-menu-inline-collapsed > .ant-menu-item .anticon + span,.home-sider .ant-menu-inline-collapsed > .ant-menu-submenu-title .anticon + span{*/
+/*    opacity:initial;*/
+/*    max-width:initial;*/
+/*    display: block;*/
+/*    line-height: 0px;*/
+/*    font-size:10px;*/
+/*}*/
+
+/*.home-sider .ant-menu-inline-collapsed > .ant-menu-item .anticon{*/
+/*    line-height: 35px;*/
+/*}*/
+
+/*.home-sider .shortcutLetterHighlight{*/
+/*    font-size:12px;*/
+/*}*/
+
+.grecaptcha-logo, .grecaptcha-badge{
+    display: none !important;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>B K Arogyam || ERP</title>
+    <style>
+        .b-agent-demo .b-agent-demo_powered_by {
+            display: none;
+        }
+
+        df-messenger {
+            --df-messenger-bot-message: #23c148;
+            --df-messenger-button-titlebar-color: #468847;
+            --df-messenger-chat-background-color: #fafafa;
+            --df-messenger-font-color: white;
+            --df-messenger-send-icon: #878fac;
+            --df-messenger-user-message: #468847;
+        }
+
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <noscript>
+        You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger
+                chat-icon="/kidneycarelogo.png"
+                intent="WELCOME"
+                chat-title="BK Arogyam"
+                agent-id="62d2a9f4-909e-4519-b3b6-49a162b6aeb1"
+                language-code="en"
+        ></df-messenger>
+    </body>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="/offline.js"></script>
+    <link rel="stylesheet" href="/offline-lang.css" />
+    <link rel="stylesheet" href="/offline.css" />
+    <script type="text/javascript">
+        window.isUpdateAvailable = new Promise(function(resolve, reject) {
+            // lazy way of disabling service workers while developing
+            if (
+                'serviceWorker' in navigator ||
+                ['localhost', '127'].indexOf(location.hostname) === -1
+            ) {
+                // register service worker file
+                navigator.serviceWorker
+                    .register('/service-worker.js')
+                    .then(reg => {
+                        reg.onupdatefound = () => {
+                            const installingWorker = reg.installing;
+                            installingWorker.onstatechange = () => {
+                                switch (installingWorker.state) {
+                                    case 'installed':
+                                        if (navigator.serviceWorker.controller) {
+                                            // new update available
+                                            resolve(true);
+                                        } else {
+                                            // no update available
+                                            resolve(false);
+                                        }
+                                        break;
+                                }
+                            };
+                        };
+                })
+                .catch(err => console.error('[SW ERROR]', err));
+        }
+    });
+
+</script>
+
+    </script>
+    <script src='https://meet.jit.si/external_api.js'></script>
+    <script>
+      // window.onload = function() {
+        if (window.location.href.indexOf('/meeting')) {
+          //Hide the element.
+          document.querySelectorAll('df-messenger')[0].style.display = 'none';
+        }
+      // };
+    </script>
+</html>

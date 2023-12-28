@@ -1,0 +1,116 @@
+.PrintPatientForm table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.PrintPatientForm  body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 90%;
+    width: 1024px;
+}
+
+.PrintPatientForm  h1,.PrintPatientForm  h2,.PrintPatientForm  h4 {
+    margin: 10px 0;
+}
+
+.PrintPatientForm .centeralign {
+    text-align: center;
+}
+
+.PrintPatientForm .rightalign {
+    text-align: right;
+}
+
+.PrintPatientForm .strong {
+    font-weight: bold;
+}
+
+.PrintPatientForm td {
+    padding: 7px 20px;
+
+}
+
+.PrintPatientForm .grey_bk {
+    background-color: #CFCFCF
+}
+
+.PrintPatientForm .textfield {
+    width: 500px;
+    height: 25px;
+    float: left;
+    border: 1px solid #848484;
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.PrintPatientForm .radio {
+    width: 25px;
+    height: 25px;
+    float: left;
+    border: 1px solid #848484;
+    display: inline-block;
+    padding-top: 5px;
+}
+
+.PrintPatientForm label {
+    float: left;
+    line-height: 25px;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.PrintPatientForm .textarea {
+    width: 500px;
+    height: 100px;
+    float: left;
+    border: 1px solid #848484;
+    display: inline-block;
+}
+
+.PrintPatientForm .signature {
+    padding: 5px 30px;
+    border-top: 1px solid #000;
+    /* margin-top: 100px; */
+    margin-left: 50%;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.PrintPatientForm .date {
+    padding: 5px 40px;
+    border-top: 1px solid #000;
+    /* margin-top: 100px; */
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.PrintPatientForm .leftrightmargin_10 {
+    margin: 0px 10px;
+}
+
+.PrintPatientForm .currentDate{
+    padding: 5px 20px;
+    margin-top: 70px;
+}
+
+.PrintPatientForm .agreement{
+    margin-top: 20px;
+    padding: 0px 0px 0px 153px;
+    text-align: justify;
+}
+
+
+.PrintPatientForm .imagefield {
+    width: 500px;
+    float: left;
+    border: 1px solid #ffffff;
+    display: inline-block;
+}
+
+.inlinelabel{
+    margin-left:20px !important;
+    margin-right: 10px !important;    
+}
+.textValue{
+    width: 100px !important;
+}
